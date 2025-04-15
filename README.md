@@ -156,5 +156,12 @@ ansible-playbook playbook2.yml
 ![balancer 2](https://github.com/user-attachments/assets/109446ab-6e5d-45d7-9672-4695fccf5f6c)
 ![balancer 3](https://github.com/user-attachments/assets/5b321658-b2a4-4a00-9931-867eafeae5a8)
 
+Проверка работы Zabbix
+Zabbix server и сбора метрик http://89.169.159.72/zabbix
+
+(Логин: Admin | Пароль: zabbix)
+![zabbix1](https://github.com/user-attachments/assets/3380eee5-8729-4246-b661-b64bdac3ee51)
+![zabbix2](https://github.com/user-attachments/assets/85308ce7-5f2b-4bba-8fbf-eb5c3a64b3c8)
+![zabbix3](https://github.com/user-attachments/assets/3e9550fc-007e-4f03-86a2-a087e3ee7c25)
 
 
