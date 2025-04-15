@@ -75,3 +75,17 @@ Cоздайте ВМ, разверните на ней Elasticsearch. Устан
 
 ВЫПОЛНЕНИЕ ДИПЛОМНОЙ РАБОТЫ
 ============================
+
+### Построение инфраструктуры с помощью Terraform, Ansible и Yandex Cloud
+
+1. Установлен и настроен Terraform и Ansible
+![terraform and ansible](https://github.com/user-attachments/assets/5c48d4fb-b807-41ff-aeba-1398a87ef122)
+
+
+2. Далее настроены конфигурационные файлы проекта
+
+   main.tf
+   meta.yaml
+
+3. Инициализация Terraform
+![tiv](https://github.com/user-attachments/assets/e4561422-e63e-4680-a8a2-32a7da022a9a)
