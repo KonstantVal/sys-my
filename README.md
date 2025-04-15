@@ -103,3 +103,28 @@ Cоздайте ВМ, разверните на ней Elasticsearch. Устан
 ![terraform apply](https://github.com/user-attachments/assets/3543aa64-cba1-4b62-b008-fd4ae4b9a2c5)
 
 В связи с экономией денежных средств ВМ на YC были остановлены на время, а затем запущены вновь. В связи с этим изменились публичные ip-адресы ВМ Bastion, Kibana, Zabbix-Server. В файл host.ini внесены изменения.
+
+
+Проверка результата в Yandex Cloud:
+
+одна сеть bastion-network
+две подсети bastion-internal-segment и bastion-external-segment
+Балансировщик alb-lb с роутером web-servers-router, целевой группой tg-web
+
+![yc1](https://github.com/user-attachments/assets/1383929b-e2c2-4e91-a899-7fc2a33795d6)
+
+6 ВМ до остановки
+![yc2](https://github.com/user-attachments/assets/5f6486ad-fee7-499c-944b-45a96801a3c8)
+
+6 ВМ после повторного запуска с новыми адресами публичных ip. В файл host.ini внесены изменения.
+![yc5](https://github.com/user-attachments/assets/d2dd750d-4baf-4ffb-8176-588346d57653)
+
+10 групп безопасности
+![yc3](https://github.com/user-attachments/assets/45225024-191b-49b1-a295-6953861d711f)
+
+ежедневные снимки дисков по расписанию
+![snapshot](https://github.com/user-attachments/assets/747a4d30-4bf8-495a-8246-76e2f6adc421)
+
+
+
+
