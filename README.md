@@ -132,10 +132,11 @@ Cоздайте ВМ, разверните на ней Elasticsearch. Устан
 
 2. Далее создадим папку с дистрибутивами /destribute(опечатка в названии, оставил так в самом проекте) и скачивание .deb пакетов elasticsearch, filebeat, kibana из зеркала Яндекс - https://mirror.yandex.ru/mirrors/elastic/. 
 
-создадим файл /ansible/ansible.cfg.
+создадим файл /ansible/ansible.cfg. Создаем всю необходимые файлы и папки для Ansible, пишем плейбуки.
 
 Проверка ansible --version
 ![terraform and ansible](https://github.com/user-attachments/assets/c9c825ec-d0f4-4896-b77a-937dd831ef28)
+
 
 Пингуем ВМ, проверяем "видит" ли их Ansible
 ![ansible ping](https://github.com/user-attachments/assets/ef75214f-1617-4106-a687-8d380a5cc5a3)
@@ -146,6 +147,7 @@ ansible-playbook playbook1.yml
 ![ansible 1 playbook](https://github.com/user-attachments/assets/25408724-b71a-4c84-a105-c55d8775123c)
 
 запуск второго плейбука, который переносит и устанавливает все необходимые приложения, конфиги и html страницы
+
 ansible-playbook playbook2.yml
 ![ansible1 5](https://github.com/user-attachments/assets/0ee4c651-2921-4e12-975d-434662fcd4b1)
 ![ansible2](https://github.com/user-attachments/assets/773602c3-e278-4787-9834-c109ad88ff1a)
@@ -163,6 +165,8 @@ Zabbix server и сбора метрик http://89.169.159.72/zabbix
 ![zabbix1](https://github.com/user-attachments/assets/3380eee5-8729-4246-b661-b64bdac3ee51)
 ![zabbix2](https://github.com/user-attachments/assets/85308ce7-5f2b-4bba-8fbf-eb5c3a64b3c8)
 ![zabbix3](https://github.com/user-attachments/assets/3e9550fc-007e-4f03-86a2-a087e3ee7c25)
+![zabbix4](https://github.com/user-attachments/assets/594a934b-27a5-412a-a88d-904f7c6e029f)
+
 
 Проверка работы ELK http://158.160.113.100:5601
 ![elastic1](https://github.com/user-attachments/assets/86e3ae1e-9de7-4fbd-8425-a7772d21dd02)
