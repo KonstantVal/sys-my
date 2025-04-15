@@ -126,5 +126,20 @@ Cоздайте ВМ, разверните на ней Elasticsearch. Устан
 ![snapshot](https://github.com/user-attachments/assets/747a4d30-4bf8-495a-8246-76e2f6adc421)
 
 
+### Развёртка Ansible
+
+1.Установливаем Ansible
+2. Далее создадим папку с дистрибутивами /destribute(опечатка в названии, оставил так в самом проекте) и скачивание .deb пакетов elasticsearch, filebeat, kibana из зеркала Яндекс - https://mirror.yandex.ru/mirrors/elastic/. 
+создадим файл /ansible/ansible.cfg.
+Проверка ansible --version
+![terraform and ansible](https://github.com/user-attachments/assets/c9c825ec-d0f4-4896-b77a-937dd831ef28)
+
+Пингуем ВМ, проверяем "видит" ли их Ansible
+![ansible ping](https://github.com/user-attachments/assets/ef75214f-1617-4106-a687-8d380a5cc5a3)
+
+запуск первого плейбука, который устанавливает roles и collections
+ansible-playbook playbook1.yml
+![ansible 1 playbook](https://github.com/user-attachments/assets/25408724-b71a-4c84-a105-c55d8775123c)
+
 
 
