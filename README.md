@@ -129,8 +129,11 @@ Cоздайте ВМ, разверните на ней Elasticsearch. Устан
 ### Развёртка Ansible
 
 1.Установливаем Ansible
+
 2. Далее создадим папку с дистрибутивами /destribute(опечатка в названии, оставил так в самом проекте) и скачивание .deb пакетов elasticsearch, filebeat, kibana из зеркала Яндекс - https://mirror.yandex.ru/mirrors/elastic/. 
+
 создадим файл /ansible/ansible.cfg.
+
 Проверка ansible --version
 ![terraform and ansible](https://github.com/user-attachments/assets/c9c825ec-d0f4-4896-b77a-937dd831ef28)
 
@@ -138,8 +141,20 @@ Cоздайте ВМ, разверните на ней Elasticsearch. Устан
 ![ansible ping](https://github.com/user-attachments/assets/ef75214f-1617-4106-a687-8d380a5cc5a3)
 
 запуск первого плейбука, который устанавливает roles и collections
+
 ansible-playbook playbook1.yml
 ![ansible 1 playbook](https://github.com/user-attachments/assets/25408724-b71a-4c84-a105-c55d8775123c)
+
+запуск второго плейбука, который переносит и устанавливает все необходимые приложения, конфиги и html страницы
+ansible-playbook playbook2.yml
+![ansible1 5](https://github.com/user-attachments/assets/0ee4c651-2921-4e12-975d-434662fcd4b1)
+![ansible2](https://github.com/user-attachments/assets/773602c3-e278-4787-9834-c109ad88ff1a)
+
+### Итоги
+Проверка работы балансировщика http://158.160.129.226/
+![balancer](https://github.com/user-attachments/assets/9efcafe8-ec59-4582-89f8-596e57d98908)
+![balancer 2](https://github.com/user-attachments/assets/109446ab-6e5d-45d7-9672-4695fccf5f6c)
+![balancer 3](https://github.com/user-attachments/assets/5b321658-b2a4-4a00-9931-867eafeae5a8)
 
 
 
