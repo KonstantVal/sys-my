@@ -164,4 +164,8 @@ Zabbix server и сбора метрик http://89.169.159.72/zabbix
 ![zabbix2](https://github.com/user-attachments/assets/85308ce7-5f2b-4bba-8fbf-eb5c3a64b3c8)
 ![zabbix3](https://github.com/user-attachments/assets/3e9550fc-007e-4f03-86a2-a087e3ee7c25)
 
-
+Проверка работы ELK http://158.160.113.100:5601
+![elastic1](https://github.com/user-attachments/assets/86e3ae1e-9de7-4fbd-8425-a7772d21dd02)
+![elastic2](https://github.com/user-attachments/assets/a147df41-a558-45c2-9f65-efb66bb3aade)
+![elastic3](https://github.com/user-attachments/assets/5c362d04-a9ab-4050-a568-c32746315a9f)
+![elastic4](https://github.com/user-attachments/assets/c61e3ee3-e5e1-4a79-bf2c-418f8b9dc4c1)
